@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --heading-size: 2.25rem;
+    --body-text-size: 1.22rem;
+    --body2-text-size: 1rem;
+    --list-item-size: 0.875rem;
+    
+    /* Colores del proyecto */
+    --color-primary: #F5C044;      /* para el círculo del icono */
+    --color-success: #4CA154;      /* para checkmarks */
+    --color-neutral-900: #18181B;  /* títulos */
+    --color-neutral-600: #52525A;  /* texto secundario */
+    --color-neutral-300: #D4D4D8;  /* bordes */
+    --color-neutral-50: #FAFAF9;   /* fondos */
+    --color-white: #FFFFFF;        
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sora, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-container {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: safe;
+}
+
+.reviewers_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0.2rem;
+}
+
+.reviewers_star {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(135deg, #ffd54f 0%, #ffb300 100%);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.reviewers_star p {
+    background: linear-gradient(0deg,rgba(245, 192, 68, 1) 0%, rgba(247, 228, 193, 1) 50%, rgb(244, 244, 240) 100%);
+    
+    font-size: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.reviewers_heading {
+    font-size: var(--heading-size);
+    margin-bottom: 1rem;
+    color: var(--color-neutral-900);
+}
+
+.reviewers_para {
+    font-size: var(--body-text-size);
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.reviewers_list {
+    list-style: none;
+    padding: 0;
+}
+
+.reviewers_list li {
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewers_list li::before {
+    content: "";
+    background-image: url("../resources/Done_ring_round_fill.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
