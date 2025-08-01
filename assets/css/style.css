@@ -228,4 +228,8 @@ body {
     .reviewers_para {
         max-width: 600px;
     }
+
+    .testimonial_card {
+        min-width: 400px;
+    }
 }
