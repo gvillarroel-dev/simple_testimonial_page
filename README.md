@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://gvillarroel-dev.github.io/simple_testimonial_page/">
       Demo
     </a>
     <span> | </span>
@@ -71,5 +71,5 @@ Created as part of a [DevChallenges](https://devchallenges.io/challenges-dashboa
 
 ## Author
 
-- Website [testimonial_page](#)
+- Website [testimonial_page](https://gvillarroel-dev.github.io/simple_testimonial_page/)
 - GitHub [@gvillarroel-dev](https://github.com/gvillarroel-dev)
